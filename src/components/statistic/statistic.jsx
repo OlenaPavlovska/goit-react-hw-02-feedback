@@ -1,4 +1,4 @@
-// import css from './data.module.css'
+ import css from './statistic.module.css'
 import PropTypes from 'prop-types'
 import { Component } from "react";
 
@@ -6,12 +6,12 @@ import { Component } from "react";
     render() {
         const { good, neutral, bad, total, positivePercentage } = this.props;
         return (
-            <div>
-                <p>Good:{good}</p>
-                <p>Neutral:{ neutral}</p>
-                <p>Bad:{ bad}</p>
-                <p>Total:{ total}</p>
-                <p>PositivePercentage:{ positivePercentage}%</p>
+            <div className={css.statisticList}>
+                <p>Good:  {good}</p>
+                <p>Neutral:  { neutral}</p>
+                <p>Bad:  { bad}</p>
+                <p>Total:  { total}</p>
+                <p>PositivePercentage:  { positivePercentage}%</p>
             </div>
         )
     }

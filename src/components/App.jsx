@@ -32,12 +32,12 @@ export class App extends Component {
 
     return (
       <div>
-        <Section title="Please leave your feedback">
+        <Section title="PLEASE LEAVE YOUR FEEDBACK">
           <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
 
         {totalFeedback > 0 ? (
-          <Section title="Statistics">
+          <Section title="STATISTIC">
             <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
@@ -47,7 +47,7 @@ export class App extends Component {
             />
           </Section>
         ) : (
-          <Section title="Statistics">
+          <Section title="STATISTIC">
             <p>There is no feedback yet.</p>
           </Section>
         )}
