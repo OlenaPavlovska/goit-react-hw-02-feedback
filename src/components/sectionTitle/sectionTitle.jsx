@@ -1,6 +1,7 @@
 import { Component } from "react";
-import PropTypes from 'prop-types'
 import css from './sectionTitle.module.css'
+import PropTypes from 'prop-types'
+
 
 
 
